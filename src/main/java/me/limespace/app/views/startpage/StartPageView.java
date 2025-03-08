@@ -40,8 +40,6 @@ public class StartPageView extends VerticalLayout {
 
         Button pv2 = new Button("Open PersonView 2 (uses setParameter ) ");
         pv2.addClickListener(e -> {
-            Person p1 = new Person();
-            p1.setFirstName("John");
             getUI().ifPresent(ui -> ui.navigate(PersonFormView2.class));
         });
 
